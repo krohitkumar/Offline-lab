@@ -4,7 +4,7 @@ workbox.precaching.precacheAndRoute([
     '/index.htm',
     '/js/index.js',
     '/img/heading.jpg',
-    'img/plus.jpg',
+    '/img/plus.jpg',
     '/js/sw.js',
     '/css/stylesheets.css'
 ]);
