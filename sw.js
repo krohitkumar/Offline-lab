@@ -3,7 +3,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox
 workbox.precaching.precacheAndRoute([
     '/index.htm',
     '/js/index.js',
-    '/img/heading.jpg',
+    '/img/heading 2.png',
     '/img/plus.jpg',
     '/css/stylesheets.css'
 ]);
