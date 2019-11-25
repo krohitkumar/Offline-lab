@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Author" content="Rohit">
+        <meta name="Description" content="This is my To Do list ">
+        <title>To-Do List</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheets.css">
+        
+        <script>
+            if ('serviceWorker' in navigator) {
+               window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/sw.js');
+                });
+            }
+        </script>
+        
+</head>
+
+
+<body>
+    <header>
+        <img src="img/heading.jpg" alt="image ">
+    </header>
+    <main>
+        <form action="/" method="get" id="add-item">
+            <label for="todo-label">Add a To-Do</label>
+            <input id="todo-label" type="text" name="todo-label">
+            <input id="todo-add" type="image" src="img/plus.jpg" alt="Add a To Do">
+        </form>
+        <form action="/" method="get" id="item-list">
+            <ul id="todo-list">
+                
+            </ul>
+        </form>
+    </main>
+    <footer>
+        Copyright &copy;2019
+    </footer>
+    <template id="todo-item">
+        <li>
+            <input id="todo-select" type="checkbox"  onClick="checkBoxUpdate(this)" name="todo-select">
+            <label for="todo-select"></label>
+        </li>
+    </template>
+    <script src="js/index.js"></script>
+</body>
+</html>
